@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Mono&display=swap');
+
+/*
+font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.text ,.number{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 250px;
+    height: 30px;
+}
+
+#Create{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#ImgDiv img{
+    border: 1px solid black;
+    border-radius: 10px;
+}

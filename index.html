@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    
+    <!--<script src="./src/js/app.js"></script>-->
+
+    <title>QR Code Creator</title>
+</head>
+<body>
+    <div align=center id="MainDiv">
+        <b>Text</b>
+        <br><br>
+        <input id="TextBox" type="text" maxlength="500"class="text"placeholder="Text(Max Length 500)">
+        <!--<textarea id="TextBox"></textarea>-->
+        <br><br>
+        <b>Number</b>
+        <br>
+        <input id="NumberBox" type="number" min="10" step="10" max="1000" class="number"placeholder="Number(Max Number 1000)">
+        <!--<textarea id="NumberBox"></textarea>-->
+        <br><br>
+        <button id="Create">CreateQrCode</button>
+        <br>
+        <br>
+    </div>
+
+    <div align=center id="ImgDiv">
+        <img src=""id="qrCodeImg">
+    </div>
+
+</body>
+
+<script>
+    function SetImg(url){
+        const img = document.getElementById("qrCodeImg")
+        img.setAttribute("src", url);
+    }
+
+    document.getElementById('Create').onclick = function() {
+        let size = document.getElementById("NumberBox").value;
+        let text = document.getElementById("TextBox").value;
+
+        let baseurl = "http://api.qrserver.com/v1/create-qr-code/?data="+text+"!&size="+size+"x"+size
+        SetImg(baseurl)
+    };
+</script>
+
+</html>
