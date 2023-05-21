@@ -12,7 +12,7 @@
     <title>QR Code Creator</title>
 </head>
 <body>
-    <div align=center id="MainDiv">
+    <div class="AlignCenter" id="MainDiv">
         <b>Text</b>
         <br><br>
         <input id="TextBox" type="text" maxlength="500"class="text"placeholder="Text(Max Length 500)">
@@ -28,25 +28,12 @@
         <br>
     </div>
 
-    <div align=center id="ImgDiv">
+    <div class="AlignCenter" id="ImgDiv">
         <img src=""id="qrCodeImg">
     </div>
 
 </body>
 
-<script>
-    function SetImg(url){
-        const img = document.getElementById("qrCodeImg")
-        img.setAttribute("src", url);
-    }
-
-    document.getElementById('Create').onclick = function() {
-        let size = document.getElementById("NumberBox").value;
-        let text = document.getElementById("TextBox").value;
-
-        let baseurl = "https://api.qrserver.com/v1/create-qr-code/?data="+text+"!&size="+size+"x"+size
-        SetImg(baseurl)
-    };
-</script>
+<script src="./src/Js/app.js"></script>
 
 </html>

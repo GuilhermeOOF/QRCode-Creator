@@ -18,12 +18,24 @@ body{
     height: 30px;
 }
 
+.AlignCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #Create{
     border: 1px solid black;
     border-radius: 10px;
 }
 
+button:hover{
+    background-color: #c2c1c1;
+}
+
+/*
 #ImgDiv img{
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 1px;
 }
+*/
