@@ -8,7 +8,7 @@
 ## How to use?
 - Its Simple!
 - Where it says text you will put your text or url that the QR Code will contain
-- Then where it says Number you will put the size the minimum is 10 and the maximum is 1000, but we recommend 250
+- Then where it says Size you will put the size the minimum is 10 and the maximum is 1000, but we recommend 250
 - Then click the button Create, it will show the QR Code Image below the button.
 
 ##### You can download the QR Codes
