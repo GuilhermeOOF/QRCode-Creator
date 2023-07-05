@@ -12,25 +12,43 @@
     <title>QR Code Creator</title>
 </head>
 <body>
-    <div class="AlignCenter" id="MainDiv">
-        <b>Text</b>
-        <br><br>
-        <input id="TextBox" type="text" maxlength="500"class="text"placeholder="Text(Max Length 500)">
-        <!--<textarea id="TextBox"></textarea>-->
-        <br><br>
-        <b>Number</b>
-        <br>
-        <input id="NumberBox" type="number" min="10" step="10" max="1000" class="number"placeholder="Number(Max Number 1000)">
-        <!--<textarea id="NumberBox"></textarea>-->
-        <br><br>
-        <button id="Create">Create Qr Code</button>
-        <br>
-        <br>
-    </div>
-
-    <div class="AlignCenter" id="ImgDiv">
-        <img src=""id="qrCodeImg">
-    </div>
+    <div class="header">
+        <h1>Qr Code Generator</h1>
+        <div class="inner-header flex">
+            <div class="AlignCenter" id="MainDiv">
+                <b>Text</b>
+                <br><br>
+                <input id="TextBox" type="text" maxlength="500"class="text"placeholder="Text(Max Length 500)">
+                <br><br>
+                <b>Size</b>
+                <br>
+                <input id="NumberBox" type="number" min="10" step="10" max="1000" class="number"placeholder="Number(Max Number 1000)">
+                <!--<textarea id="NumberBox"></textarea>-->
+                <br><br>
+                <button id="Create" class="Buttons">Create</button>
+                <br>
+                <br>
+            </div>
+        
+            <div class="AlignCenter ImageHidden" id="ImgDiv">
+                <img src=""id="qrCodeImg">
+                <button id="Remove" class="Buttons">Remove</button>
+            </div>
+        </div>
+        <div>
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+            </defs>
+            <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7"/>
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"/>
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"/>
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+      </div>
 
 </body>
 
